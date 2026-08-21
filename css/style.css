@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fafafa;
+  color: #1e293b;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.alt-bg {
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1e293b;
+  letter-spacing: -0.5px;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  background: #eef2f5;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  padding: 45px 50px; 
+  max-width: 900px; 
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.profile-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 35px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.profile-nav .nav-link {
+  text-decoration: none;
+  color: #64748b;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.profile-nav .nav-link:hover,
+.profile-nav .nav-link.active {
+  color: #1e293b;
+  background-color: #eef2f6;
+}
+
+.profile-top-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+
+.profile-image {
+  flex-shrink: 0;
+}
+
+.profile-photo {
+  width: 160px; /* Slightly smaller picture */
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.profile-name-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+}
+
+.profile-name-wrapper h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #1e293b;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.profile-name-wrapper .motto {
+  font-size: 1.2rem;
+  color: #64748b;
+  font-style: italic;
+  margin: 0;
+  text-align: center; 
+  width: 100%;        
+  display: block;
+}
+
+.profile-bottom-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.profile-bottom-content .intro-text p {
+  color: #475569;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 100%;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 35px 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  border: 1px solid #e2e8f0;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+  border-color: #2563eb;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.card-list {
+  list-style: none;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.card-list li {
+  padding: 6px 0;
+  font-size: 0.95rem;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-list li i {
+  color: #2563eb;
+  font-size: 0.9rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 50px;
+  margin-top: 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1rem;
+  color: #475569;
+}
+
+.info-item i {
+  font-size: 1.4rem;
+  width: 30px;
+  color: #1e293b;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 10px 0 15px 0;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #eef2f5;
+  border-radius: 50%;
+  color: #1e293b;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #1e293b;
+  color: #ffffff;
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(30, 41, 59, 0.2);
+}
+
+.availability {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.availability i {
+  color: #2563eb;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: #1e293b;
+}
+
+.form-group label i {
+  margin-right: 8px;
+  color: #2563eb;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  background: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.05);
+}
+
+.form-note {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #64748b;
+  text-align: center;
+}
+
+footer {
+  background: #ffffff;
+  padding: 25px 0;
+  text-align: center;
+  border-top: 1px solid #e2e8f0;
+}
+
+.footer-content p {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.footer-content i {
+  color: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .profile-top-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile-name-wrapper h1 {
+    font-size: 2.2rem;
+  }
+
+  .profile-name-wrapper .motto {
+    font-size: 1.1rem;
+  }
+
+  .profile-bottom-content {
+    text-align: center;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    padding: 50px 35px;
+    max-width: 150%;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .profile-nav {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    padding: 50px 50px;
+  }
+
+  .social-links a {
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
+}
