@@ -13,12 +13,10 @@ if (contactForm) {
   contactForm.addEventListener('submit', function(e) {
     e.preventDefault(); 
 
-    // Get form values
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
 
-    // Basic validation
     if (name === '' || email === '' || message === '') {
       showFormMessage('Please fill in all fields.', 'error');
       return;
@@ -29,7 +27,7 @@ if (contactForm) {
       return;
     }
 
-    showFormMessage('✅ Thank you, ' + name + '! Your message has been sent. I\'ll get back to you within 24 hours.', 'success');
+    showFormMessage(' Thank you, ' + name + '! Your message has been sent. ', 'success');
     
     setTimeout(() => {
       contactForm.reset();
